@@ -1,0 +1,11 @@
+<app-card titulo="Projetos e Instalações Fotovoltáica" corBtn="blueviolet">
+</app-card>
+<app-uploader (uploadCompleto)="mostrarMsg()"></app-uploader>
+<!-- Ao clicar no botão executar o metodo click() do input 
+    file -->
+<!-- Variaves de template, são variaves que são criadas no html para recuperar um component -->
+<input type="file" #inputFile>
+<button id="btn" (click)="inputFile.click()">Selecionar um arquivo</button>
+
+<app-card titulo="Eficiência Energética" banner="https://media.istockphoto.com/id/623672670/pt/foto/energy-saving-cfl-lamps.jpg?s=612x612&w=0&k=20&c=OtYhg1Zdf4yAlcT4EF3yofuj3GcbjWCji_46EQ7FWbg=" username="Sayure Vieira" userFoto="../../assets/sayure.jpg" corBtn="red"></app-card>
+<app-uploader (uploadCompleto)="mostrarMsg()"></app-uploader>
